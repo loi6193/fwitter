@@ -1,4 +1,4 @@
-body {font-family: 'メイリオ','Meiryo',"sans-seif"}
+body {font-family: 'メイリオ','Meiryo',"sans-seif";overflow-x: hidden;}
 
 img {width: 8%;
     height: 8%;margin-top: 10%;margin-left: 10%;
