@@ -44,17 +44,16 @@ label {
     color: #9E9E9E;
 }
 
-.namebox > label {
-    font-size: 200%;
+.namebox > #name2 {
+    font-size: 30px;
     position: absolute;
-    top: 23.5%;
-    left: 12.5%;
+    top: 410px;left: 120px;
 }
 
-.passbox > label {
-    font-size: 200%;
+.passbox > #pass2 {
+    font-size: 30px;
     position: absolute;
-    top: 34.5%;left: 12.5%;
+    top: 600px;left: 120px;
 }
 
 #name:focus ~ #name2 {
@@ -176,13 +175,13 @@ label {
     color: #9E9E9E;
 }
 
-.namebox > label {
+.namebox > #name2 {
     font-size: 30px;
     position: absolute;
     top: 410px;left: 120px;
 }
 
-.passbox > label {
+.passbox > #pass2 {
     font-size: 30px;
     position: absolute;
     top: 600px;left: 120px;
