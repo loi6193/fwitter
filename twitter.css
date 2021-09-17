@@ -1,59 +1,55 @@
-body {font-family: 'Noto Sans JP', sans-serif;}
-
-img {width: 8%;
-    height: 8%;margin-top: 10%;margin-left: 10%;
-}
-
-.text {
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 6%;
-    font-size: 350%;
-    font-weight: 900;
-}
-
-#name {
-    width: 80%;
-    height: 100px;
-    margin-top: 5%;
-    margin :5% 10% 0% 10%;
-    border-radius: 15px;
-    box-shadow: none;
-    font-size: 30px;
-    padding-left: 2%;
-    z-index: 2;
-    padding-top: 35px;
-    border: solid #BDBDBD;
-}
-
-#pass {
-    width: 80%;
-    height: 100px;
-    margin-top: 5%;
-    margin :5% 10% 0% 10%;
-    border-radius: 15px;
-    box-shadow: none;
-    font-size: 30px;
-    padding-left: 2%;
-    z-index: 2;
-    padding-top: 35px;
-    border: solid #BDBDBD;
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    max-width: 100%;
 }
 
 label {
     color: #9E9E9E;
 }
 
+img {width: 8%;
+    height: 8%;margin-top: 10%;margin-left: 10%;
+}
+
+
+/*------------テキストのスタイル----------*/
+.textbox {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+#text {
+    font-size: 350%;
+    margin-left: 10%;
+    margin-top: 6%;
+    font-weight: 900;
+}
+/*--------------------------------------*/
+
+
+/*----------ユーザー名のスタイル----------*/
+.namebox {
+    width: auto;
+    height: auto;
+    padding: 5% 10% 0% 10%;
+}
+
+#name {
+    width: 80%;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: none;
+    font-size: 30px;
+    padding-left: 2%;
+    padding-top: 35px;
+    border: solid #BDBDBD;
+}
+
 .namebox > #name2 {
     font-size: 30px;
     position: absolute;
     top: 410px;left: 120px;
-}
-
-.passbox > #pass2 {
-    font-size: 30px;
-    position: absolute;
-    top: 600px;left: 120px;
 }
 
 #name:focus ~ #name2 {
@@ -69,12 +65,6 @@ label {
     line-height: 3;
 }
 
-#pass:focus {
-    border: 3px solid #1DA1F2;
-    outline: 0;
-    line-height: 3;
-}
-
 #name:placeholder-shown ~ #name2{
     
 }
@@ -84,6 +74,34 @@ label {
     position: absolute;
     top: 385px;left: 122px;
     color: #BDBDBD;
+}
+/*------------------------------*/
+
+
+/*----------パスワードのスタイル----------*/
+#pass {
+    width: 80%;
+    height: 100px;
+    margin :5% 10% 0% 10%;
+    border-radius: 15px;
+    box-shadow: none;
+    font-size: 30px;
+    padding-left: 2%;
+    padding-top: 35px;
+    border: solid #BDBDBD;
+    -webkit-text-security:disc;
+}
+
+.passbox > #pass2 {
+    font-size: 30px;
+    position: absolute;
+    top: 600px;left: 120px;
+}
+
+#pass:focus {
+    border: 3px solid #1DA1F2;
+    outline: 0;
+    line-height: 3;
 }
 
 #pass:focus ~ #pass2 {
@@ -103,11 +121,10 @@ label {
     top: 575px;left: 122px;
     color: #BDBDBD;
 }
+/*------------------------------*/
 
-#pass {
-    -webkit-text-security:disc;
-}
 
+/*--------サブミットのスタイル--------*/
 #submit {
     width: 85%;
     height: 100px;
@@ -124,138 +141,175 @@ label {
     font-weight: 800;
     -webkit-appearance: none;
 }
+/*-----------------------------------*/
 
 
 
-
-@media screen and (min-widgh: 481px) {
-    body {font-family: 'メイリオ'}
-
-img {width: 50%;
-    height: 8%;margin-top: 10%;margin-left: 10%;
-}
-
-.text {
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 6%;
-    font-size: 350%;
-    font-weight: 900;
-}
-
-#name {
-    width: 770px;
-    height: 100px;
-    margin-top: 5%;
-    margin :5% 10% 0% 10%;
-    border-radius: 15px;
-    box-shadow: none;
-    font-size: 30px;
-    padding-left: 2%;
-    z-index: 2;
-    padding-top: 35px;
-    border: solid #BDBDBD;
-}
-
-#pass {
-    width: 770px;
-    height: 100px;
-    margin-top: 5%;
-    margin :5% 10% 0% 10%;
-    border-radius: 15px;
-    box-shadow: none;
-    font-size: 30px;
-    padding-left: 2%;
-    z-index: 2;
-    padding-top: 35px;
-    border: solid #BDBDBD;
-}
-
-label {
-    color: #9E9E9E;
-}
-
-.namebox > #name2 {
-    font-size: 30px;
-    position: absolute;
-    top: 410px;left: 120px;
-}
-
-.passbox > #pass2 {
-    font-size: 30px;
-    position: absolute;
-    top: 600px;left: 120px;
-}
-
-#name:focus ~ #name2 {
-    font-size: 25px;
-    position: absolute;
-    top: 385px;left: 122px;
-    color: #1DA1F2;
-}
-
-#name:focus {
-    border: 3px solid #1DA1F2;
-    outline: 0;
-    line-height: 3;
-}
-
-#pass:focus {
-    border: 3px solid #1DA1F2;
-    outline: 0;
-    line-height: 3;
-}
-
-#name:placeholder-shown ~ #name2{
+/*::::::::::::::::::::::::::::::::::::*/
+@media screen and (min-width: 481px) {
     
 }
+/*:::::::::::::::::::::::::::::::::::::*/
 
-#name:not(:placeholder-shown) ~ #name2{
-    font-size: 25px;
-    position: absolute;
-    top: 385px;left: 122px;
-    color: #BDBDBD;
-}
 
-#pass:focus ~ #pass2 {
-    font-size: 25px;
-    position: absolute;
-    top: 575px;left: 122px;
-    color: #1DA1F2;
-}
 
-#pass:placeholder-shown ~ #pass2{
+/*:::::::::::::::::::::::::::::::::::::*/
+@media screen and (min-width: 960px) {
+    body {
+        font-family: 'Noto Sans JP', sans-serif;max-width: 100%;
+    }
     
-}
-
-#pass:not(:placeholder-shown) ~ #pass2{
-    font-size: 25px;
-    position: absolute;
-    top: 575px;left: 122px;
-    color: #BDBDBD;
-}
-
-#pass {
-    -webkit-text-security:disc;
-}
-
-#submit {
-    width: 800px;
-    height: 100px;
-    margin-top: 5%;
-    margin :5% 10% 0% 10%;
-    border-radius: 50px;
-    box-shadow: none;
-    font-size: 30px;
-    padding-left: 2%;
-    background-color: #1DA1F2;
-    border: 3px solid #1DA1F2;
-    outline: 0;
-    color: white;
-    font-weight: 800;
-}
-}
-
-@media screen and (min-widgh: 960px) {
+    label {
+        color: #9E9E9E;
+    }
     
+    img {
+        width: 3%;height: 3%;
+        margin-top: 1.5%;
+        margin-left: 35%;
+    }
+    
+    /*------------テキストのスタイル----------*/
+    .textbox {
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+
+    #text {
+        font-size: 200%;
+        margin-left: 35%;
+        margin-top: 2%;
+        font-weight: 900;
+    }
+    /*--------------------------------------*/
+    
+    
+    /*----------ユーザー名のスタイル----------*/
+    .namebox {
+        width: auto;
+        height: auto;
+        padding: 2% 10% 0% 0%;
+        margin-left: 35%;
+        margin-top: 0%;
+    }
+
+    #name {
+        width: 55%;
+        height: 30px;
+        border-radius: 15px;
+        box-shadow: none;
+        font-size: 20px;
+        padding-left: 2%;
+        padding-top: 30px;
+        border: solid #BDBDBD;
+        margin-top: -10%;
+    }
+
+    .namebox > #name2 {
+        font-size: 20px;
+        position: absolute;
+        top: 180px;left: 490px;
+    }
+
+    #name:focus ~ #name2 {
+        font-size: 15px;
+        position: absolute;
+        top: 167px;left: 490px;
+        color: #1DA1F2;
+    }
+
+    #name:focus {
+        border: 3px solid #1DA1F2;
+        outline: 0;
+        line-height: 3;
+    }
+
+    #name:placeholder-shown ~ #name2{
+    
+    }
+
+    #name:not(:placeholder-shown) ~ #name2{
+        font-size: 15px;
+        position: absolute;
+        top: 170px;left: 490px;
+        color: #BDBDBD;
+    }
+    /*------------------------------*/
+    
+    
+    
+    /*----------パスワードのスタイル----------*/
+    .passbox {
+        width: auto;
+        height: auto;
+        padding: 2% 10% 0% 10%;
+        margin-left: 19%;
+        margin-top: %;
+    }
+    
+    #pass {
+        width: 49.2%;
+        height: 30px;
+        border-radius: 15px;
+        box-shadow: none;
+        font-size: 20px;
+        padding-left: 2%;
+        padding-top: 30px;
+        border: solid #BDBDBD;
+        margin-top: 0%;
+        -webkit-text-security:disc;
+    }
+
+    .passbox > #pass2 {
+        font-size: 20px;
+        position: absolute;
+        top: 275px;left: 490px;
+    }
+
+    #pass:focus {
+        border: 3px solid #1DA1F2;
+        outline: 0;
+        line-height: 3;
+    }
+
+    #pass:focus ~ #pass2 {
+        font-size: 15px;
+        position: absolute;
+        top: 261px;left: 490px;
+        color: #1DA1F2;
+    }
+
+    #pass:placeholder-shown ~ #pass2{
+    
+    }
+
+    #pass:not(:placeholder-shown) ~ #pass2{
+        font-size: 15px;
+        position: absolute;
+        top: 261px;left: 490px;
+        color: #BDBDBD;
+    }
+    /*------------------------------*/
+    
+    
+    /*--------サブミットのスタイル--------*/
+    #submit {
+        width: 32%;
+        height: 50px;
+        margin-top: 2%;
+        margin-left: 35%;
+        border-radius: 50px;
+        box-shadow: none;
+        font-size: 20px;
+        padding-left: 2%;
+        background-color: #1DA1F2;
+        border: 3px solid #1DA1F2;
+        outline: 0;
+        color: white;
+        font-weight: 800;
+        -webkit-appearance: none;
+    }
+    /*-----------------------------------*/
 }
+/*::::::::::::::::::::::::::::::::::::::::*/
