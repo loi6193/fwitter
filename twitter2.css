@@ -176,6 +176,9 @@ body {
     .submitbox {
         width: 40%;
         margin-left: 30%;
+        outline: none;
+        box-shadow: none;
+        border: none;
     }
 }
 
@@ -205,5 +208,8 @@ body {
     .submitbox {
         width: 30%;
         margin-left: 35%;
+        outline: none;
+        box-shadow: none;
+        border: none;
     }
 }
